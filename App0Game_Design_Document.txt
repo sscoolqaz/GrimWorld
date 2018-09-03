@@ -1,0 +1,52 @@
+App/Game Design Document
+
+Team Name
+
+Team Members
+
+Title Page
+
+App/Game Description/function – What problem does it solve?
+
+Rough plot/design
+
+App/Game Flow
+
+Concept/Genre/Target Audience
+
+Look and feel
+
+App/Game Art outline
+
+Key assets and their development
+
+Mechanics
+
+Rules
+
+Physics
+
+Movement in app/game
+
+Interaction with objects
+
+Combat
+
+Economy
+
+Screen Flow
+
+Interface
+
+HUD
+
+Control/Commands
+
+Audio, Music, Sound Effects
+
+Hardware Specifications
+
+Project Timeline
+
+Additional Ideas
+
