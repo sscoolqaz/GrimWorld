@@ -61,9 +61,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Exit.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\Go.cs" />
+    <Compile Include="Assets\Scripts\InputAction.cs" />
     <Compile Include="Assets\Scripts\Room.cs" />
     <Compile Include="Assets\Scripts\RoomNavigation.cs" />
+    <Compile Include="Assets\Scripts\TextInput.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/herkc/Documents/GitHub/StunningOctoPuzzleOK/Text_Adventure/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
