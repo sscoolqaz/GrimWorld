@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Text_Adventure/Room")]
+[CreateAssetMenu(menuName = "TextAdventure/Room")]
 public class Room : ScriptableObject
 {
 
@@ -12,5 +12,7 @@ public class Room : ScriptableObject
     //array of exits
     public Exit[] exits;
 
+    //creates an array of objects that you can interact with
+    public InteractableObject[] interactableObjectsInRoom;
 
 }

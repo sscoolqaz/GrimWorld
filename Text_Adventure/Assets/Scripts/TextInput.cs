@@ -20,7 +20,7 @@ public class TextInput : MonoBehaviour
 
     void AcceptStringInput(string userInput)
     {
-        //Converts the input to lowercase
+        //Converts the input to lowercase and sets it to the userInput variable
         userInput = userInput.ToLower ();
         //Take user input and mirror it back to the User
         controller.LogStringWithReturn (userInput);
@@ -32,23 +32,25 @@ public class TextInput : MonoBehaviour
         for (int i = 0; i < controller.inputActions.Length; i++)
         {
             InputAction inputAction = controller.inputActions [i];
-            //if there is a keyword match (word 1) then it wil respond to input
-            //The Action word is the word 1
+            //If there is a keyword match (word 1) then it wil respond to input
+            //The Action word is word 1
             if (inputAction.keyWord == seperatedInputWords [0])
             {
                 inputAction.RespondToInput (controller, seperatedInputWords);
             }
         }
 
-        InputComplete ();
+        InputComplete();
 
     }
 
-    //Function for input complete
-    void InputComplete ()
+    //Function that displays text on screen, reactivates input, and sets the input to nothing
+    void InputComplete()
     {
-        controller.DisplayLoggedText ();
-        inputField.ActivateInputField ();
+        //Displays text in log
+        controller.DisplayLoggedText();
+        //Re-sets the input field as active
+        inputField.ActivateInputField();
         //Used to clear the user input after they press enter.
         inputField.text = null;
     }

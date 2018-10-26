@@ -10,6 +10,6 @@ public class Go : InputAction
     {
         //passes input to game controller dont create variables for scene objects
         //Second Word is passed to AttempToChangeRooms
-        controller.roomNavigation.AttemptToChangeRooms (seperatedInputWords [1]);
+        controller.roomNavigation.AttemptToChangeRooms(seperatedInputWords[1]);
     }
 }

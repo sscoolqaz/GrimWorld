@@ -23,7 +23,7 @@ public class RoomNavigation : MonoBehaviour {
         {
             //Sets the key then the value.
             exitDictionary.Add (currentRoom.exits[i].keyString, currentRoom.exits[i].valueRoom);
-            controller.interactionDescriptionsinRoom.Add(currentRoom.exits[i].exitDescription);
+            controller.interactionDescriptionsInRoom.Add(currentRoom.exits[i].exitDescription);
         }
     }
 
