@@ -61,6 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ActionResponse.cs" />
+    <Compile Include="Assets\Scripts\ChangeRoomResponse.cs" />
     <Compile Include="Assets\Scripts\Examine.cs" />
     <Compile Include="Assets\Scripts\Exit.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
@@ -69,9 +71,12 @@
     <Compile Include="Assets\Scripts\InteractableItems.cs" />
     <Compile Include="Assets\Scripts\InteractableObject.cs" />
     <Compile Include="Assets\Scripts\Interaction.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Room.cs" />
     <Compile Include="Assets\Scripts\RoomNavigation.cs" />
+    <Compile Include="Assets\Scripts\Take.cs" />
     <Compile Include="Assets\Scripts\TextInput.cs" />
+    <Compile Include="Assets\Scripts\Use.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/herkc/Documents/GitHub/StunningOctoPuzzleOK/Text_Adventure/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

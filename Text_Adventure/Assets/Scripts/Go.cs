@@ -6,10 +6,10 @@ using UnityEngine;
 
 public class Go : InputAction
 {
-    public override void RespondToInput(GameController controller, string[] seperatedInputWords)
+    public override void RespondToInput(GameController controller, string[] separatedInputWords)
     {
         //passes input to game controller dont create variables for scene objects
         //Second Word is passed to AttempToChangeRooms
-        controller.roomNavigation.AttemptToChangeRooms(seperatedInputWords[1]);
+        controller.roomNavigation.AttemptToChangeRooms(separatedInputWords[1]);
     }
 }

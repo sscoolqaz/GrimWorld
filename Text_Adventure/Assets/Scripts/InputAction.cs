@@ -4,8 +4,8 @@ using UnityEngine;
 
 public abstract class InputAction : ScriptableObject
 {
-    //Input it responds to
+    //Variable for keywords commands listen to
     public string keyWord;
 
-    public abstract void RespondToInput(GameController controller, string[] seperatedInputWords);
+    public abstract void RespondToInput(GameController controller, string[] separatedInputWords);
 }

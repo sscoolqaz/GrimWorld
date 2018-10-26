@@ -22,8 +22,9 @@ public class RoomNavigation : MonoBehaviour {
         for (int i = 0; i < currentRoom.exits.Length; i++)
         {
             //Sets the key then the value.
-            exitDictionary.Add (currentRoom.exits[i].keyString, currentRoom.exits[i].valueRoom);
+            exitDictionary.Add(currentRoom.exits[i].keyString, currentRoom.exits[i].valueRoom);
             controller.interactionDescriptionsInRoom.Add(currentRoom.exits[i].exitDescription);
+
         }
     }
 
@@ -34,11 +35,13 @@ public class RoomNavigation : MonoBehaviour {
         //checks if the dictionary has the keyword in it
         if (exitDictionary.ContainsKey (directionNoun))
         {
+            
             //sets current room to exitDictionary
             currentRoom = exitDictionary[directionNoun];
             //Report back to game controller
             controller.LogStringWithReturn("You head off to the " + directionNoun);
             controller.DisplayLoggedText();
+
         } else
         {
             //If you cant go that direction display text + direction

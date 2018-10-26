@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Creates an asset menu
-[CreateAssetMenu (menuName = "TextAdventure/Interactable Object")]
+[CreateAssetMenu(menuName = "TextAdventure/Interactable Object")]
 //Makes it scriptable
 public class InteractableObject : ScriptableObject
 {

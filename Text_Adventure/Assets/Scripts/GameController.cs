@@ -3,27 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameController : MonoBehaviour {
+public class GameController : MonoBehaviour
+{
 
     //A simple variable to display Text
     public Text displayText;
     //Array for the game to comapre input to
     public InputAction[] inputActions;
 
+    //privately creating variables hidden from inspector
+    //Creates variable for room navigation
     [HideInInspector] public RoomNavigation roomNavigation;
     //for the things the player can interact with
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string> ();
     //Creates hidden variable for interactable Items
     [HideInInspector] public InteractableItems interactableItems;
 
-
+    //Creates actionLog variable as a list
     List<string> actionLog = new List<string>();
 
     // Use this for initialization
     void Awake ()
     {
         interactableItems = GetComponent<InteractableItems>();
-        roomNavigation = GetComponent<RoomNavigation> ();
+        roomNavigation = GetComponent<RoomNavigation>();
 	}
 
     //Initial Startup Text
@@ -36,7 +39,7 @@ public class GameController : MonoBehaviour {
     //Displays text on the console
     public void DisplayLoggedText()
     {
-        string logAsText = string.Join ("\n", actionLog.ToArray ());
+        string logAsText = string.Join ("\n", actionLog.ToArray());
 
         displayText.text = logAsText;
     }
@@ -52,7 +55,7 @@ public class GameController : MonoBehaviour {
         //"+" joins the two strings together
         string combinedText = roomNavigation.currentRoom.description + "\n" + joinedInteractionDescriptions;
 
-        LogStringWithReturn (combinedText);
+        LogStringWithReturn(combinedText);
     }
 
     //See Line 18 RoomNavigation.cs
@@ -77,22 +80,32 @@ public class GameController : MonoBehaviour {
                 interactionDescriptionsInRoom.Add(descriptionNotInInventory);
             }
 
-            InteractableObject interactabInRoom = currentRoom.interactableObjectsInRoom[i];
+            InteractableObject interactableInRoom = currentRoom.interactableObjectsInRoom[i];
 
             for (int j = 0; j < interactableInRoom.interactions.Length; j++) 
             {
+
                 Interaction interaction = interactableInRoom.interactions[j];
-                //checks to see if the input says examine
+                
+                //checks to see if the input says uses the keyword "examine"
                 if (interaction.inputAction.keyWord == "examine")
                 {
-                    interactableItems.examinDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                    interactableItems.examineDictionary.Add(interactableInRoom.noun, interaction.textResponse);
                 }
+
+                //checks to see if the input uses the keyword "take"
+                if (interaction.inputAction.keyWord == "take")
+                {
+                    interactableItems.takeDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                }
+
             }
 
         }
+
     }
 
-    public string TestVerDictionaryWithNoun(Dictionary<string, string> verbDictionary, string berb, string noun)
+    public string TestVerbDictionaryWithNoun(Dictionary<string, string> verbDictionary, string verb, string noun)
     {
         //checks if word is in dictionary if it is then it will be returned to string
         if (verbDictionary.ContainsKey(noun))
