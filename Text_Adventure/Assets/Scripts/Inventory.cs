@@ -1,8 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//creates a creation menu item
 [CreateAssetMenu(menuName = "TextAdventure/InputActions/Inventory")]
 public class Inventory : InputAction
 {
