@@ -43,6 +43,20 @@ public class RoomNavigation : MonoBehaviour {
 
 	}
 
+    public void AttemptToSaySomething(string directionNoun)
+    {
+        if (exitDictionary.ContainsKey(directionNoun))
+        {
+            currentRoom = exitDictionary[directionNoun];
+            controller.LogStringWithReturn ("You say " + directionNoun);
+            controller.DisplayLoggedText();
+        } else
+        {
+            controller.LogStringWithReturn("You can't say that!");
+        }
+    }
+
+
 	public void ClearExits()
 	{
 		exitDictionary.Clear ();
