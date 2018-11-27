@@ -128,8 +128,8 @@ MonoBehaviour:
     y: 0
     width: 670
     height: 731
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 13}
@@ -254,8 +254,8 @@ MonoBehaviour:
     y: 0
     width: 423
     height: 731
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -531,9 +531,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: be050000ec0600000a090000c00500009a05000028080000c2080000ec050000b606000076070000120900005e090000c40800007c3300004c08000070070000e0060000
-    m_LastClickedID: 0
-    m_ExpandedIDs: 68f9ffff00000000
+    m_SelectedIDs: f00d0000
+    m_LastClickedID: 3568
+    m_ExpandedIDs: e0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -594,7 +594,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scripts/ScriptableObjects/InputActions
   m_ViewMode: 0
   m_StartGridSize: 75
   m_LastFolders: []
@@ -606,7 +606,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 2e0a0000
     m_LastClickedID: 2606
-    m_ExpandedIDs: 000000002c3000003a300000463000005c300000843000006c310000d23100003632000048320000
+    m_ExpandedIDs: 000000006e0900008a090000ac090000fa090000660b00000c0c0000a60c0000c40c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -631,10 +631,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 157}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000002c300000463000005c300000843000006c310000d23100003632000048320000
+    m_ExpandedIDs: ffffffff000000006e0900007e0900008a090000fa0900000c0c0000a60c0000c40c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -7,6 +7,6 @@ public class Say : InputAction
 {
     public override void RespondToInput(GameController controller, string[] separatedInputWords)
     {
-        controller.roomNavigation.AttemptToSaySomething(separatedInputWords[1]);
+        controller.roomNavigation.AttemptToChangeRooms(separatedInputWords[1]);
     }
 }
