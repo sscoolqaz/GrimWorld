@@ -49,7 +49,7 @@ public class RoomNavigation : MonoBehaviour {
         {
             currentRoom = exitDictionary[directionNoun];
             controller.LogStringWithReturn ("You say " + directionNoun);
-            controller.DisplayLoggedText();
+            controller.DisplayRoomText();
         } else
         {
             controller.LogStringWithReturn("You can't say that!");
